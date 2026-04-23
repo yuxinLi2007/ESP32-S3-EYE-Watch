@@ -1,0 +1,23 @@
+# ESP32-S3-EYE Display Configuration
+CONFIG_ESP32S3_EYE=y
+
+# Task Watchdog Timeout - Increase to 10 seconds to prevent WDT triggers during LVGL rendering
+CONFIG_TASK_WATCHDOG_TIMEOUT_MS=10000
+
+# Display Configuration
+CONFIG_BSP_DISP_BW=1
+CONFIG_BSP_DISP_H_RES=240
+CONFIG_BSP_DISP_V_RES=240
+
+# LVGL Configuration
+CONFIG_LV_USE_USER_DATA=y
+CONFIG_LV_MEM_CUSTOM=y
+CONFIG_LV_MEM_SIZE_KB=128
+
+# WiFi Configuration
+CONFIG_ESP_WIFI_SSID=""
+CONFIG_ESP_WIFI_PASSWORD=""
+
+# NTP Configuration
+CONFIG_LWIP_LOCAL_HOSTNAME="esp32s3"
+CONFIG_ESP32S3_DEFAULT_CPU_FREQ_240=y
